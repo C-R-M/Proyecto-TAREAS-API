@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+.showLists {
+  background: linear-gradient(to bottom, grey, #aaa);
+  min-height: calc(100vh - #{$headerHeight});
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

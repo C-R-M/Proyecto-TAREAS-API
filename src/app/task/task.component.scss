@@ -1,0 +1,113 @@
+span{
+  font-size:100%;
+  font-weight:normal;
+}
+.task,form{
+  list-style:none;
+}
+.task{
+  overflow:hidden;
+  padding:1em;
+}
+input {
+  width: 9em;
+  height: 1em;
+  font-size-adjust: inherit;
+  margin-left: -0.5em;
+
+}
+.task form{
+  overflow:hidden;
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+.task form{
+  margin:1em;
+  float:left;
+  overflow:hidden;
+}
+.img1 {
+  position: absolute;
+  z-index: 95;
+  top: -30px;
+  left: 120px;
+}
+.imgdel {
+  position: absolute;
+  top: -13px;
+  right: 0px;
+  z-index:95;
+}
+ul li h2{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+.task form{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:180%;
+}
+.task form{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+  overflow: visible;
+}
+.task form:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+  overflow:hidden;
+}
+.task form:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+  overflow:hidden;
+}
+.task form:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+  overflow:hidden;
+}
+.task form:hover,.task form:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:90;
+}
+
+.controls {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+.task:hover .controls {
+  opacity: 1;
+}
+i {
+  cursor: pointer;
+}
+

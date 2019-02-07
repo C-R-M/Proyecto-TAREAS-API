@@ -1,0 +1,45 @@
+@import '../../variables.scss';
+@import "../navbar/navbar.component.scss";
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+  height: 100%;
+  width: 100%;
+}
+
+mat-sidenav {
+  width: 100%;
+}
+
+input {
+  all: unset;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  line-height: 30px;
+  margin: 0;
+  width: 80%;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.icon {
+  display: inline-block;
+  height: 30px;
+  margin: 0 auto;
+  padding-right: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 5%;
+}
+
+.label {
+  display: inline-block;
+  line-height: 30px;
+  margin: 0;
+  width: 28%;
+}

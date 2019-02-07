@@ -1,0 +1,61 @@
+
+    <mat-sidenav-container>
+        <mat-sidenav  #sidenav role="navigation">
+         <mat-nav-list>
+          <a mat-list-item routerLink="/login" routerLinkActive="active">
+            <mat-icon class="icon">input</mat-icon>
+            <span class="label">Login</span>
+          </a>
+          <a mat-list-item routerLink="/register" routerLinkActive="active">
+            <mat-icon class="icon">home</mat-icon>
+              <span class="label">Registrarse</span>
+          </a>
+          <a mat-list-item routerLink="/login" routerLinkActive="active">
+            <mat-icon class="icon">input</mat-icon>
+            <span class="label">LogOut</span>
+          </a>
+          </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <mat-toolbar color="primary">
+           <div fxHide.gt-xs>
+             <button mat-icon-button>
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>
+           <div>
+             <a>
+                <span class="label">Proyecto Mostrar Tareas.</span>
+             </a>
+           </div>
+           <div fxFlex fxLayout fxLayoutAlign="flex-end"  fxHide.xs>
+              <ul fxLayout fxLayoutGap="20px" class="navigation-items">
+                  <li>
+                      <a routerLink="/login">
+                        <mat-icon class="icon">input</mat-icon>
+                        <span  class="label">Login</span>
+                       </a>
+                  </li>
+                  <li>
+                    <a routerLink="/register">
+                        <mat-icon class="icon">home</mat-icon>
+                        <span class="label">Registrarse</span>
+                    </a>
+                  </li>
+                  <li>
+                      <a routerLink="/login">
+                        <mat-icon class="icon">input</mat-icon>
+                        <span class="label">LogOut</span>
+                       </a>
+                  </li>
+                  <li>
+                    <span class="label"><input type="text" placeholder="add list" (keyup.enter)="addList($event)" /></span>
+                  </li>
+              </ul>
+           </div>
+          </mat-toolbar>
+          <main>
+          </main>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+

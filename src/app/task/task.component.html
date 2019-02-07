@@ -1,0 +1,15 @@
+<div class="task">
+  <form>
+      <div class="img1">
+          <img src="..\..\assets\pin.png" alt>
+      </div>
+        <div class="imgdel">
+            <i class="material-icons" (click)="openConfirmationDialog()"><img src="..\..\assets\delete.png" alt title="delete"></i>
+        </div>
+    <span *ngIf="!editing" (dblclick)="editStart()">{{ task.text }}</span>
+    <input autofocus *ngIf="editing" type="text" (keyup.enter)="editTaskText($event.target.value)" (blur)="cancelEdit()" />
+  <div class="controls">
+    <i (click)="editStart()" class="material-icons">edit</i>
+  </div>
+</form>
+</div>

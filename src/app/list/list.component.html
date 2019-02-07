@@ -1,0 +1,13 @@
+<div class="list">
+  <h1>
+    <span [hidden]="editing" (dblclick)="edit(editInput)">{{ list.name }}</span>
+    <span [hidden]="!editing">
+      <input type="text" #editInput (keyup.enter)="editName()" (blur)="cancelEdit()" [(ngModel)]="newName" />
+    </span>
+    <i (click)="openConfirmationDialog()" class="material-icons">delete</i> <i (click)="edit(editInput)" class="material-icons">edit</i>
+  </h1>
+  <div class="controls">
+    <input type="text" placeholder="add task" (keyup.enter)="newTask($event)" />
+  </div>
+  <div class="tasks"><app-task *ngFor="let taskObj of list.tasks" [task]="taskObj"></app-task></div>
+</div>

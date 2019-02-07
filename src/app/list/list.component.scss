@@ -1,0 +1,32 @@
+.list {
+  padding: 0.8em;
+  background: #ddd;
+  border-radius: 0.5em;
+  margin: 0.7em;
+  input {
+    all: unset;
+    border-bottom: 1px solid grey;
+    color: grey;
+    width: 100%;
+  }
+  i {
+    cursor: pointer;
+  }
+  .controls {
+    opacity: 0;
+    transition: opacity 400ms;
+  }
+  &:hover .controls {
+    opacity: 1;
+  }
+  i  {
+    opacity: 0;
+    transition: opacity 400ms;
+  }
+  &:hover i {
+    opacity: 1;
+  }
+  i {
+    cursor: pointer;
+  }
+}
